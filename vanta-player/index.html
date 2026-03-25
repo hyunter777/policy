@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VANTA PLAYER</title>
+  <meta name="description" content="VANTA PLAYER 공식 안내 페이지">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d1117;
+      --panel: #161b22;
+      --line: #21262d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #f59e0b;
+      --accent-soft: #ffc766;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top right, rgba(245, 158, 11, 0.16), transparent 26%),
+        linear-gradient(180deg, #0d1117 0%, #0a0f14 100%);
+      color: var(--text);
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+
+    .hero, .panel {
+      border: 1px solid var(--line);
+      background: rgba(22, 27, 34, 0.92);
+      border-radius: 24px;
+      padding: 28px;
+    }
+
+    .panel { margin-top: 18px; }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: var(--accent-soft);
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    .brand-mark {
+      width: 14px;
+      height: 14px;
+      border-radius: 4px;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-soft) 100%);
+      box-shadow: 0 0 24px rgba(245, 158, 11, 0.35);
+    }
+
+    h1 {
+      margin: 16px 0 8px;
+      font-size: clamp(34px, 5vw, 48px);
+      line-height: 1.05;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    p + p { margin-top: 10px; }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+      margin-top: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: rgba(13, 17, 23, 0.72);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 18px;
+    }
+
+    li + li { margin-top: 8px; }
+
+    a {
+      color: var(--accent-soft);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 16px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(245, 158, 11, 0.12);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>VANTA PLAYER</span>
+      </div>
+      <h1>Local and network playback for Android</h1>
+      <p>VANTA PLAYER는 로컬 파일과 네트워크 라이브러리를 함께 다루는 Android 미디어 플레이어입니다.</p>
+      <p>앱 안에서 로컬 탐색, 최근 재생, 원격 라이브러리 연결, 전체화면 재생 흐름을 이어서 사용할 수 있습니다.</p>
+
+      <div class="actions">
+        <a class="button" href="./privacy-policy/">개인정보처리방침</a>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>주요 기능</h2>
+      <div class="grid">
+        <article class="card">
+          <h2>Playback</h2>
+          <p>전체화면 재생, 이어보기, 자막과 재생 제어를 앱 안에서 바로 사용할 수 있습니다.</p>
+        </article>
+        <article class="card">
+          <h2>Local</h2>
+          <p>로컬 비디오와 오디오를 탐색하고, 앱 내 내부 저장소 탐색기를 통해 파일 흐름을 이어갈 수 있습니다.</p>
+        </article>
+        <article class="card">
+          <h2>Network</h2>
+          <p>SMB, WebDAV, FTP, SFTP 같은 원격 라이브러리를 등록하고 탐색할 수 있습니다.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
