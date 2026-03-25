@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Policy Pages</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d1117;
+      --panel: #161b22;
+      --line: #21262d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #f59e0b;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #0d1117 0%, #0a0f14 100%);
+      color: var(--text);
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+
+    .hero, .panel {
+      border: 1px solid var(--line);
+      background: rgba(22, 27, 34, 0.92);
+      border-radius: 24px;
+      padding: 24px;
+    }
+
+    .panel { margin-top: 18px; }
+
+    h1, h2 { margin: 0 0 10px; }
+
+    p { margin: 0; color: var(--muted); }
+
+    ul {
+      margin: 14px 0 0;
+      padding-left: 18px;
+    }
+
+    li + li { margin-top: 10px; }
+
+    a { color: #ffc766; }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <h1>Policy Pages</h1>
+      <p>여러 프로젝트의 공개 정책 페이지를 모아두는 정적 사이트입니다.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="./vanta-player/privacy-policy/">VANTA PLAYER Privacy Policy</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
